@@ -388,7 +388,7 @@ html[data-theme="dark"] .history__photo--archive {
 .gallery__grid img,
 .gallery-grid img {
   width: 100%;
-  height: 180px;
+  height: 220px;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 12px;
