@@ -379,7 +379,7 @@ html[data-theme="dark"] .history__photo--archive {
   }
 
   .history__mountain {
-    width: 62px;
-    min-width: 62px;
+    width: 30px;
+    min-width: 30px;
   }
 }
