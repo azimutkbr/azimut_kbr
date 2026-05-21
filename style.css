@@ -297,4 +297,88 @@ html[data-theme="dark"] .step__number { color: #11160f; background: var(--accent
   .event-card img { height: 180px; }
   .gallery__grid img { height: 130px; }
   .footer__bottom { flex-direction: column; }
+}/* Обновлённый раздел "История клуба" */
+
+.history--archive {
+  background:
+    radial-gradient(circle at 12% 20%, rgba(89, 108, 45, 0.10), transparent 28%),
+    linear-gradient(180deg, var(--surface-2), var(--bg-soft));
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 72px 0;
+}
+
+.history__inner--archive {
+  grid-template-columns: 0.82fr 1.18fr;
+  gap: 54px;
+  align-items: center;
+}
+
+.history__heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.history__mountain {
+  width: 78px;
+  min-width: 78px;
+  color: var(--accent);
+  margin-top: 2px;
+}
+
+.history__heading h2 {
+  margin: 0;
+  font-family: var(--font-title);
+  font-size: clamp(38px, 5vw, 60px);
+  line-height: 0.9;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--accent);
+}
+
+.history--archive .history__text p {
+  margin: 0 0 13px;
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--text);
+}
+
+.history__photo--archive {
+  transform: rotate(0.7deg);
+  background: rgba(255, 250, 240, 0.92);
+  padding: 10px;
+  border-radius: 16px;
+  box-shadow: 0 22px 50px rgba(67, 48, 22, 0.20);
+}
+
+.history__photo--archive img {
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+  object-fit: cover;
+  border-radius: 11px;
+}
+
+html[data-theme="dark"] .history--archive {
+  background:
+    radial-gradient(circle at 12% 20%, rgba(211, 179, 92, 0.08), transparent 28%),
+    linear-gradient(180deg, #151d12, #10160f);
+}
+
+html[data-theme="dark"] .history__photo--archive {
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.48);
+}
+
+@media (max-width: 960px) {
+  .history__inner--archive {
+    grid-template-columns: 1fr;
+  }
+
+  .history__mountain {
+    width: 62px;
+    min-width: 62px;
+  }
 }
