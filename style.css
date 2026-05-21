@@ -258,3 +258,10 @@ html[data-theme="dark"] .join-step__icon { background: #1a2117; border-color: rg
   .join-step__icon svg { width: 36px; height: 36px; }
   .footer__bottom { flex-direction: column; }
 }
+
+/* Аварийная правка: текст и иконки всегда видимы, даже если JS-анимация не сработала */
+.reveal,
+.reveal.is-visible {
+  opacity: 1 !important;
+  transform: none !important;
+}
