@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Туристический клуб «Азимут» в г. Прохладный: альпинизм, походы, школа выживания, анонсы мероприятий и история клуба." />
   <title>Туристический клуб «Азимут» — Прохладный</title>
+  <link rel="preconnect" href="https://images.unsplash.com" />
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
 </head>
@@ -13,6 +14,10 @@
     <nav class="nav" aria-label="Главная навигация">
       <a class="brand" href="#top" aria-label="Туристический клуб Азимут">
         <img src="images/logo.png" alt="Логотип туристического клуба Азимут" class="brand__logo" />
+        <span class="brand__text">
+          <strong>Азимут</strong>
+          <span>туристический клуб</span>
+        </span>
       </a>
 
       <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
@@ -50,63 +55,151 @@
 
   <main>
     <section class="section announcements" id="announcements">
-      <div class="section-title reveal"><span></span><h2>Ближайшие анонсы</h2><span></span></div>
+      <div class="section-title reveal">
+        <span></span>
+        <h2>Ближайшие анонсы</h2>
+        <span></span>
+      </div>
+
       <div class="cards cards--announcements">
         <article class="event-card reveal">
           <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=80" alt="Горный маршрут" />
-          <div class="event-card__date">20–23<br>июня</div>
-          <div class="event-card__body"><h3>Семейный поход</h3><p>Лёгкий маршрут для всей семьи, знакомство с клубом и правилами движения в группе.</p><div class="event-card__meta"><span>👥 30 мест</span><span>▥ лёгкий</span></div></div>
+          <div class="event-card__date">8–10<br>июня</div>
+          <div class="event-card__body">
+            <h3>Поход выходного дня</h3>
+            <p>Лёгкий маршрут для новичков, знакомство с клубом и правилами движения в группе.</p>
+            <div class="event-card__meta">
+              <span>👥 12 мест</span>
+              <span>▥ лёгкий</span>
+            </div>
+          </div>
         </article>
+
         <article class="event-card reveal">
           <img src="https://images.unsplash.com/photo-1522163182402-834f871fd851?auto=format&fit=crop&w=900&q=80" alt="Скалолазание и альпинистская подготовка" />
           <div class="event-card__date">21–23<br>июня</div>
-          <div class="event-card__body"><h3>Горная подготовка</h3><p>Базовые навыки: страховка, снаряжение, узлы и безопасная работа на рельефе.</p><div class="event-card__meta"><span>👥 10 мест</span><span>▥ средний</span></div></div>
+          <div class="event-card__body">
+            <h3>Горная подготовка</h3>
+            <p>Базовые навыки: страховка, снаряжение, узлы и безопасная работа на рельефе.</p>
+            <div class="event-card__meta">
+              <span>👥 10 мест</span>
+              <span>▥ средний</span>
+            </div>
+          </div>
         </article>
+
         <article class="event-card reveal">
           <img src="https://images.unsplash.com/photo-1487730116645-74489c95b41b?auto=format&fit=crop&w=900&q=80" alt="Палатка и костёр в лесу" />
-          <div class="event-card__date">1<br>марта 2027</div>
-          <div class="event-card__body"><h3>Школа выживания</h3><p>Ориентирование, костёр, укрытие, первая помощь и автономность на природе.</p><div class="event-card__meta"><span>👥 15 мест</span><span>▥ средний</span></div></div>
+          <div class="event-card__date">5–7<br>июля</div>
+          <div class="event-card__body">
+            <h3>Школа выживания</h3>
+            <p>Ориентирование, костёр, укрытие, первая помощь и автономность на природе.</p>
+            <div class="event-card__meta">
+              <span>👥 15 мест</span>
+              <span>▥ средний</span>
+            </div>
+          </div>
         </article>
       </div>
     </section>
 
-    <section class="history-torn" id="history">
-      <div class="section history-torn__inner">
-        <div class="history-torn__text reveal">
-          <div class="history-torn__title">
-            <svg class="history-torn__icon" viewBox="0 0 120 70" aria-hidden="true"><path d="M7 61 L35 25 L53 46 L77 12 L113 61 Z" fill="none" stroke="currentColor" stroke-width="7" stroke-linejoin="round"/><path d="M35 25 L46 44 L53 46" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/><path d="M77 12 L88 42 L96 50" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/></svg>
-            <h2>История клуба</h2>
-          </div>
-          <p>Туристический клуб «Азимут» был открыт в 1965 году и уже более полувека объединяет людей, для которых горы, походы и активный образ жизни стали не просто увлечением, а важной частью судьбы.</p>
-          <p>Именно здесь многие сделали свои первые шаги в будущую профессию. Воспитанники клуба становились горными гидами, спасателями, инструкторами по туризму, наставниками для новых поколений.</p>
-          <p>Наша цель — сохранять традиции клуба, развивать туризм, делиться опытом и открывать мир вместе.</p>
-          <a class="text-link" href="#gallery">Смотреть архив →</a>
+    <section class="history" id="history">
+      <div class="section history__inner">
+        <div class="history__text reveal">
+          <p class="icon-title">⛰</p>
+          <h2>История клуба</h2>
+          <p>Туристический клуб «Азимут» объединяет людей, которые любят горы, походы, активный образ жизни и бережное отношение к природе Кавказа.</p>
+          <p>Мы развиваем культуру безопасных путешествий, проводим тренировки, готовим участников к маршрутам и сохраняем историю клуба через фото, отчёты и воспоминания.</p>
+          <a class="text-link" href="#gallery">Смотреть фотоисторию →</a>
         </div>
-        <div class="history-torn__photo reveal"><img src="images/history-club.jpg" alt="История туристического клуба Азимут"></div>
+        <div class="history__photo reveal">
+          <img src="https://images.unsplash.com/photo-1521336575822-6da63fb45455?auto=format&fit=crop&w=1200&q=80" alt="Группа туристов в горах" />
+        </div>
       </div>
     </section>
 
     <section class="section directions" id="directions">
-      <div class="section-title section-title--compact reveal"><span></span><h2>Направления работы</h2><span></span></div>
-      <div class="direction-mockup-grid">
-        <article class="direction-mockup-card reveal"><img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=900&q=80" alt="Альпинизм"><div class="direction-mockup-card__overlay"></div><div class="direction-mockup-card__content"><div class="direction-mockup-card__icon"><svg viewBox="0 0 80 80" aria-hidden="true"><path d="M17 60 L39 18 L63 60 Z" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/><path d="M39 18 L45 43 L52 60" fill="none" stroke="currentColor" stroke-width="4"/><path d="M24 60 H68" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></div><h3>Альпинизм</h3><p>Восхождения, скальные маршруты, ледовые занятия и развитие техники безопасного движения.</p></div></article>
-        <article class="direction-mockup-card reveal"><img src="https://images.unsplash.com/photo-1504851149312-7a075b496cc7?auto=format&fit=crop&w=900&q=80" alt="Школа выживания"><div class="direction-mockup-card__overlay"></div><div class="direction-mockup-card__content"><div class="direction-mockup-card__icon"><svg viewBox="0 0 80 80" aria-hidden="true"><path d="M40 15 C48 27 59 34 59 49 C59 62 50 70 40 70 C30 70 21 62 21 49 C21 36 32 29 40 15 Z" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/><path d="M31 57 H49" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/><path d="M33 67 L47 39" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></div><h3>Школа выживания</h3><p>Практические навыки в дикой природе: ориентирование, укрытие, огонь, вода, первая помощь.</p></div></article>
-        <article class="direction-mockup-card reveal"><img src="https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?auto=format&fit=crop&w=900&q=80" alt="Походы"><div class="direction-mockup-card__overlay"></div><div class="direction-mockup-card__content"><div class="direction-mockup-card__icon"><svg viewBox="0 0 80 80" aria-hidden="true"><path d="M30 68 V24 C30 16 36 10 44 10 C52 10 58 16 58 24 V68" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/><path d="M24 32 H64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M24 48 H64" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M20 68 H68" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg></div><h3>Походы</h3><p>Пешеходные и горные походы выходного дня, многодневные экспедиции и клубные выезды.</p></div></article>
+      <div class="section-title reveal">
+        <span></span>
+        <h2>Направления работы</h2>
+        <span></span>
+      </div>
+
+      <div class="cards cards--directions">
+        <article class="direction-card reveal">
+          <div class="direction-card__overlay"></div>
+          <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=900&q=80" alt="Альпинизм" />
+          <div class="direction-card__content">
+            <div class="direction-card__icon">⛏</div>
+            <h3>Альпинизм</h3>
+            <p>Восхождения, скальные маршруты, ледовые занятия и развитие техники безопасного движения.</p>
+          </div>
+        </article>
+
+        <article class="direction-card reveal">
+          <div class="direction-card__overlay"></div>
+          <img src="https://images.unsplash.com/photo-1504851149312-7a075b496cc7?auto=format&fit=crop&w=900&q=80" alt="Школа выживания" />
+          <div class="direction-card__content">
+            <div class="direction-card__icon">🔥</div>
+            <h3>Школа выживания</h3>
+            <p>Практические навыки: ориентирование, укрытие, огонь, вода, первая помощь.</p>
+          </div>
+        </article>
+
+        <article class="direction-card reveal">
+          <div class="direction-card__overlay"></div>
+          <img src="https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?auto=format&fit=crop&w=900&q=80" alt="Походы" />
+          <div class="direction-card__content">
+            <div class="direction-card__icon">🎒</div>
+            <h3>Походы</h3>
+            <p>Пешеходные и горные маршруты выходного дня, многодневные экспедиции и клубные выезды.</p>
+          </div>
+        </article>
       </div>
     </section>
 
     <section class="section join" id="join">
-      <div class="section-title section-title--compact reveal"><span></span><h2>Как стать участником</h2><span></span></div>
-      <div class="join-path">
-        <article class="join-path__item reveal"><div class="join-path__number">1</div><div class="join-path__icon"><svg viewBox="0 0 80 80" aria-hidden="true"><path d="M24 14 H51 L62 25 V66 H24 Z" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/><path d="M50 14 V27 H62" fill="none" stroke="currentColor" stroke-width="5"/><path d="M34 39 H52 M34 50 H48" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg></div><div><h3>Заявка</h3><p>Напишите нам по телефону, на почту или через соцсети клуба.</p></div></article>
-        <article class="join-path__item reveal"><div class="join-path__number">2</div><div class="join-path__icon"><svg viewBox="0 0 80 80" aria-hidden="true"><path d="M16 23 H64 V51 H39 L27 62 V51 H16 Z" fill="none" stroke="currentColor" stroke-width="5" stroke-linejoin="round"/><path d="M29 37 H31 M39 37 H41 M49 37 H51" fill="none" stroke="currentColor" stroke-width="6" stroke-linecap="round"/></svg></div><div><h3>Знакомство</h3><p>Мы ответим на вопросы и пригласим на встречу или мероприятие.</p></div></article>
-        <article class="join-path__item reveal"><div class="join-path__number">3</div><div class="join-path__icon"><svg viewBox="0 0 80 80" aria-hidden="true"><path d="M28 68 V25 C28 16 34 10 42 10 C50 10 56 16 56 25 V68" fill="none" stroke="currentColor" stroke-width="5"/><path d="M21 35 H63 M21 50 H63" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M18 68 H66" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/></svg></div><div><h3>Пробный выход</h3><p>Присоединитесь к одному из ближайших мероприятий в качестве гостя.</p></div></article>
-        <article class="join-path__item reveal"><div class="join-path__number">4</div><div class="join-path__icon"><svg viewBox="0 0 80 80" aria-hidden="true"><path d="M18 40 L30 28 L40 38 L50 28 L62 40" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M28 42 L40 54 L52 42" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/><path d="M18 40 L40 62 L62 40" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></div><div><h3>Добро пожаловать!</h3><p>Станьте участником клуба и открывайте новые горизонты вместе с нами.</p></div></article>
+      <div class="section-title reveal">
+        <span></span>
+        <h2>Как стать участником</h2>
+        <span></span>
+      </div>
+
+      <div class="steps">
+        <article class="step reveal">
+          <div class="step__number">1</div>
+          <div class="step__icon">✍</div>
+          <h3>Заявка</h3>
+          <p>Напишите нам по телефону, на почту или через соцсети клуба.</p>
+        </article>
+        <article class="step reveal">
+          <div class="step__number">2</div>
+          <div class="step__icon">💬</div>
+          <h3>Знакомство</h3>
+          <p>Мы ответим на вопросы и пригласим на встречу или мероприятие.</p>
+        </article>
+        <article class="step reveal">
+          <div class="step__number">3</div>
+          <div class="step__icon">🎒</div>
+          <h3>Пробный выход</h3>
+          <p>Присоединитесь к одному из ближайших мероприятий в качестве гостя.</p>
+        </article>
+        <article class="step reveal">
+          <div class="step__number">4</div>
+          <div class="step__icon">🤝</div>
+          <h3>Добро пожаловать</h3>
+          <p>Станьте участником клуба и открывайте новые горизонты вместе с нами.</p>
+        </article>
       </div>
     </section>
 
     <section class="section gallery" id="gallery">
-      <div class="section-title reveal"><span></span><h2>Галерея</h2><span></span></div>
+      <div class="section-title reveal">
+        <span></span>
+        <h2>Галерея</h2>
+        <span></span>
+      </div>
+
       <div class="gallery__grid">
         <img class="reveal" src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=800&q=80" alt="Озеро и горы" />
         <img class="reveal" src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=800&q=80" alt="Палатка на закате" />
@@ -119,11 +212,32 @@
 
   <footer class="footer" id="contacts">
     <div class="section footer__inner">
-      <div class="footer__brand"><img src="images/logo.png" alt="Логотип туристического клуба Азимут" /><div><h2>Туристический клуб «Азимут»</h2><p>Альпинизм · Походы · Школа выживания</p></div></div>
-      <div class="footer__contacts"><h3>Контакты</h3><p>📍 361045, Кабардино-Балкарская Республика, г. Прохладный, ул. Гагарина, д. 2а</p><p>☎ <a href="tel:+79187290097">+7 918 729 00 97</a></p><p>✉ <a href="mailto:azimut.kbr@yandex.ru">azimut.kbr@yandex.ru</a></p></div>
-      <div class="footer__cta"><h3>Связаться с клубом</h3><p>Напишите нам, чтобы узнать расписание, требования к снаряжению и ближайшие мероприятия.</p><a class="btn btn--primary" href="mailto:azimut.kbr@yandex.ru">Написать на почту</a></div>
+      <div class="footer__brand">
+        <img src="images/logo.png" alt="Логотип туристического клуба Азимут" />
+        <div>
+          <h2>Туристический клуб «Азимут»</h2>
+          <p>Альпинизм · Походы · Школа выживания</p>
+        </div>
+      </div>
+
+      <div class="footer__contacts">
+        <h3>Контакты</h3>
+        <p>📍 361045, Кабардино-Балкарская Республика, г. Прохладный, ул. Гагарина, д. 2а</p>
+        <p>☎ <a href="tel:+79187290097">+7 918 729 00 97</a></p>
+        <p>✉ <a href="mailto:azimut.kbr@yandex.ru">azimut.kbr@yandex.ru</a></p>
+      </div>
+
+      <div class="footer__cta">
+        <h3>Связаться с клубом</h3>
+        <p>Напишите нам, чтобы узнать расписание, требования к снаряжению и ближайшие мероприятия.</p>
+        <a class="btn btn--primary" href="mailto:azimut.kbr@yandex.ru">Написать на почту</a>
+      </div>
     </div>
-    <div class="section footer__bottom"><span>© Туристический клуб «Азимут». Все права защищены.</span><a href="#top">Наверх ↑</a></div>
+
+    <div class="footer__bottom section">
+      <p>© <span id="year"></span> Туристический клуб «Азимут». Все права защищены.</p>
+      <a href="#top">Наверх ↑</a>
+    </div>
   </footer>
 </body>
 </html>

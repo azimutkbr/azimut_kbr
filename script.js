@@ -3,36 +3,43 @@ const themeToggle = document.querySelector('.theme-toggle');
 const themeIcon = document.querySelector('.theme-toggle__icon');
 const themeText = document.querySelector('.theme-toggle__text');
 const menuToggle = document.querySelector('.menu-toggle');
-const menu = document.querySelector('#site-menu');
-
-const savedTheme = localStorage.getItem('azimut-theme') || 'light';
-setTheme(savedTheme);
+const menu = document.querySelector('.nav__links');
+const year = document.querySelector('#year');
 
 function setTheme(theme) {
   root.setAttribute('data-theme', theme);
   localStorage.setItem('azimut-theme', theme);
-  if (themeIcon && themeText) {
-    themeIcon.textContent = theme === 'dark' ? '☀️' : '🌙';
-    themeText.textContent = theme === 'dark' ? 'Светлая' : 'Тёмная';
+
+  if (theme === 'dark') {
+    themeIcon.textContent = '☀️';
+    themeText.textContent = 'Светлая';
+  } else {
+    themeIcon.textContent = '🌙';
+    themeText.textContent = 'Тёмная';
   }
 }
 
-themeToggle?.addEventListener('click', () => {
-  const current = root.getAttribute('data-theme') || 'light';
-  setTheme(current === 'dark' ? 'light' : 'dark');
+const savedTheme = localStorage.getItem('azimut-theme') || 'light';
+setTheme(savedTheme);
+
+themeToggle.addEventListener('click', () => {
+  const currentTheme = root.getAttribute('data-theme');
+  setTheme(currentTheme === 'dark' ? 'light' : 'dark');
 });
 
-menuToggle?.addEventListener('click', () => {
-  const isOpen = menu?.classList.toggle('is-open');
-  menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+menuToggle.addEventListener('click', () => {
+  const isOpen = menu.classList.toggle('is-open');
+  menuToggle.setAttribute('aria-expanded', String(isOpen));
 });
 
-menu?.querySelectorAll('a').forEach((link) => {
+menu.querySelectorAll('a').forEach((link) => {
   link.addEventListener('click', () => {
     menu.classList.remove('is-open');
-    menuToggle?.setAttribute('aria-expanded', 'false');
+    menuToggle.setAttribute('aria-expanded', 'false');
   });
 });
+
+year.textContent = new Date().getFullYear();
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -41,6 +48,6 @@ const observer = new IntersectionObserver((entries) => {
       observer.unobserve(entry.target);
     }
   });
-}, { threshold: 0.12 });
+}, { threshold: 0.15 });
 
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
