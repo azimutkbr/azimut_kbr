@@ -470,4 +470,55 @@ html[data-theme="dark"] .history__photo--archive {
     width: 125px !important;
     height: 125px !important;
   }
+}/* Галерея: крупные прямоугольные фото с горизонтальной прокруткой */
+
+.gallery__grid,
+.gallery-grid {
+  display: flex !important;
+  gap: 22px !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  scroll-snap-type: x mandatory;
+  padding: 10px 6px 24px !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+.gallery__grid img,
+.gallery-grid img {
+  flex: 0 0 420px !important;
+  width: 420px !important;
+  height: 260px !important;
+  aspect-ratio: 16 / 10 !important;
+  object-fit: cover !important;
+  border-radius: 16px !important;
+  scroll-snap-align: start;
+  box-shadow: 0 16px 34px rgba(45, 34, 19, 0.22) !important;
+}
+
+/* Полоса прокрутки */
+.gallery__grid::-webkit-scrollbar,
+.gallery-grid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.gallery__grid::-webkit-scrollbar-track,
+.gallery-grid::-webkit-scrollbar-track {
+  background: rgba(89, 108, 45, 0.12);
+  border-radius: 999px;
+}
+
+.gallery__grid::-webkit-scrollbar-thumb,
+.gallery-grid::-webkit-scrollbar-thumb {
+  background: rgba(89, 108, 45, 0.55);
+  border-radius: 999px;
+}
+
+/* На телефоне */
+@media (max-width: 768px) {
+  .gallery__grid img,
+  .gallery-grid img {
+    flex: 0 0 82vw !important;
+    width: 82vw !important;
+    height: 230px !important;
+  }
 }
