@@ -401,18 +401,19 @@ html[data-theme="dark"] .history__photo--archive {
   border-radius: 12px;
 }
 
-/* На телефоне пусть будут чуть выше, чтобы красиво смотрелись */
+/* На телефоне пусть чуть выше, чтобы красиво смотрелись */
 @media (max-width: 768px) {
   .gallery__grid img,
   .gallery-grid img {
     height: 210px;
     aspect-ratio: 16 / 10;
   }
-/* Шрифт для главного слова "Азимут" в шапке */
+}
 
+/* Шрифт для главного слова "Азимут" в шапке */
 .hero h1,
 .hero__title {
-  font-family: "Russo One Local", sans-serif;
+  font-family: "Russo One Local", sans-serif !important;
   text-transform: uppercase;
   letter-spacing: 0.04em;
   color: #f4efe6;
