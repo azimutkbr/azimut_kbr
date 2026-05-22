@@ -430,37 +430,3 @@ html[data-theme="dark"] .history__photo--archive {
   background-position: center center !important;
   background-repeat: no-repeat !important;
 }
-
-/* Потёртости на главном слове "АЗИМУТ" */
-
-.hero h1,
-.hero__title {
-  font-family: "Russo One Local", sans-serif !important;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-
-  color: transparent !important;
-  -webkit-text-fill-color: transparent;
-
-  background-image:
-    radial-gradient(circle, rgba(65, 52, 36, 0.30) 0 1.2px, transparent 1.8px),
-    radial-gradient(circle, rgba(65, 52, 36, 0.20) 0 1px, transparent 1.6px),
-    linear-gradient(180deg, #f7f0e4 0%, #e9dfcf 100%);
-
-  background-size:
-    13px 11px,
-    19px 17px,
-    100% 100%;
-
-  background-position:
-    0 0,
-    6px 8px,
-    center;
-
-  -webkit-background-clip: text;
-  background-clip: text;
-
-  text-shadow:
-    0 3px 0 rgba(0, 0, 0, 0.22),
-    0 10px 22px rgba(0, 0, 0, 0.38);
-}
