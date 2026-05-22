@@ -422,7 +422,7 @@ html[data-theme="dark"] .history__photo--archive {
     0 3px 0 rgba(0, 0, 0, 0.25),
     0 10px 22px rgba(0, 0, 0, 0.35);
 }
-}
+
 /* Возвращаем фото и затемнение в шапке */
 .hero {
   background-image: var(--hero-overlay), url("images/hero.jpg") !important;
