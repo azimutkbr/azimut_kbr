@@ -430,3 +430,21 @@ html[data-theme="dark"] .history__photo--archive {
   background-position: center center !important;
   background-repeat: no-repeat !important;
 }
+
+/* Картинка-заголовок АЗИМУТ в шапке */
+
+.hero__title-img {
+  display: block;
+  width: min(760px, 100%);
+  height: auto;
+  margin: 0 0 24px;
+  filter:
+    drop-shadow(0 3px 0 rgba(0, 0, 0, 0.28))
+    drop-shadow(0 10px 22px rgba(0, 0, 0, 0.38));
+}
+
+@media (max-width: 768px) {
+  .hero__title-img {
+    width: min(520px, 100%);
+    margin-bottom: 18px;
+  }
