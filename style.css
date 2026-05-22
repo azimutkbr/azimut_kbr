@@ -401,7 +401,7 @@ html[data-theme="dark"] .history__photo--archive {
   border-radius: 12px;
 }
 
-/* На телефоне пусть чуть выше, чтобы красиво смотрелись */
+/* На телефоне пусть будут чуть выше, чтобы красиво смотрелись */
 @media (max-width: 768px) {
   .gallery__grid img,
   .gallery-grid img {
@@ -416,8 +416,17 @@ html[data-theme="dark"] .history__photo--archive {
   font-family: "Russo One Local", sans-serif !important;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: #f4efe6;
+  color: #f4efe6 !important;
   text-shadow:
     0 3px 0 rgba(0, 0, 0, 0.25),
     0 10px 22px rgba(0, 0, 0, 0.35);
+}
+}
+/* Возвращаем фото и затемнение в шапке */
+.hero {
+  background-image: var(--hero-overlay), url("images/hero.jpg") !important;
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
 }
