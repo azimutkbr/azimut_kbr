@@ -446,12 +446,12 @@ html[data-theme="dark"] .history__photo--archive {
 /* Положение и размер логотипа в шапке — компьютер */
 
 .nav .brand {
-  transform: translate(35px, 19px) !important;
+  transform: translate(40px, 19px) !important;
 }
 
 .nav .brand__logo {
-  width: 175px !important;
-  height: 175px !important;
+  width: 190px !important;
+  height: 190px !important;
 }
 
 /* Настройки для телефона */
@@ -467,7 +467,7 @@ html[data-theme="dark"] .history__photo--archive {
   }
 
   .nav .brand__logo {
-    width: 105px !important;
-    height: 105px !important;
+    width: 120px !important;
+    height: 120px !important;
   }
 }
