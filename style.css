@@ -451,12 +451,23 @@ html[data-theme="dark"] .history__photo--archive {
 
 /* Положение и размер логотипа в шапке */
 
-.brand {
-  margin-left: 35px;
-  margin-top: 19px;
+.nav .brand {
+  transform: translate(34px, 18px) !important;
 }
 
-.brand__logo {
-  width: 160px;
-  height: 160px;
+.nav .brand__logo {
+  width: 175px !important;
+  height: 175px !important;
+}
+
+/* На телефоне делаем аккуратнее */
+@media (max-width: 768px) {
+  .nav .brand {
+    transform: translate(10px, 6px) !important;
+  }
+
+  .nav .brand__logo {
+    width: 105px !important;
+    height: 105px !important;
+  }
 }
