@@ -448,3 +448,15 @@ html[data-theme="dark"] .history__photo--archive {
     width: min(520px, 100%);
     margin-bottom: 18px;
   }
+
+/* Положение и размер логотипа в шапке */
+
+.brand {
+  margin-left: 28px;
+  margin-top: 14px;
+}
+
+.brand__logo {
+  width: 145px;
+  height: 145px;
+}
