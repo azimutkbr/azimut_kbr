@@ -443,16 +443,10 @@ html[data-theme="dark"] .history__photo--archive {
     drop-shadow(0 10px 22px rgba(0, 0, 0, 0.38));
 }
 
-@media (max-width: 768px) {
-  .hero__title-img {
-    width: min(520px, 100%);
-    margin-bottom: 18px;
-  }
-
-/* Положение и размер логотипа в шапке */
+/* Положение и размер логотипа в шапке — компьютер */
 
 .nav .brand {
-  transform: translate(34px, 18px) !important;
+  transform: translate(35px, 19px) !important;
 }
 
 .nav .brand__logo {
@@ -460,8 +454,14 @@ html[data-theme="dark"] .history__photo--archive {
   height: 175px !important;
 }
 
-/* На телефоне делаем аккуратнее */
+/* Настройки для телефона */
+
 @media (max-width: 768px) {
+  .hero__title-img {
+    width: min(520px, 100%);
+    margin-bottom: 18px;
+  }
+
   .nav .brand {
     transform: translate(10px, 6px) !important;
   }
