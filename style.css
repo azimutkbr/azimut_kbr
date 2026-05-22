@@ -463,11 +463,11 @@ html[data-theme="dark"] .history__photo--archive {
   }
 
   .nav .brand {
-    transform: translate(10px, 6px) !important;
+    transform: translate(20px, 8px) !important;
   }
 
   .nav .brand__logo {
-    width: 120px !important;
-    height: 120px !important;
+    width: 125px !important;
+    height: 125px !important;
   }
 }
